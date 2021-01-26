@@ -9,15 +9,14 @@
         ["submodule"],
         ["use"],
         {
-            "use": ["https://github.com/JhonnyJason/toolset"]
+            "use": ["toolset"]
         }
     ],
     "sources": [
         ["submodule"],
-        ["merge", "create"],
+        ["merge"],
         {
-            "create": ["sources"],
-            "merge": ["https://github.com/JhonnyJason/machine-sample-sources", "*"]
+            "merge": ["machine-sample-sources"]
         }
     ],
     "output": [
@@ -25,13 +24,7 @@
         ["merge"],
         {
             "merge": ["https://gitlab.com/lenny09918050/lenny-unlicense"]
-        }
-    ],
-    "testing": [
-        ["directory"],
-        ["merge"],
-        {
-            "merge": ["https://gitlab.com/lenny09918050/lenny-unlicense", "*"]
+    
         }
     ]
 }
